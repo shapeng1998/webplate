@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'
 
 function generateJoke() {
   axios
@@ -6,9 +6,9 @@ function generateJoke() {
       headers: { Accept: 'application/json' },
     })
     .then((res) => {
-      document.getElementById('joke').textContent = res.data.joke;
+      document.getElementById('joke').textContent = res.data.joke
     })
-    .catch((err) => console.error(err));
+    .catch(err => console.error(err))
 }
 
-export { generateJoke };
+export { generateJoke }
