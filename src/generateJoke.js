@@ -8,7 +8,7 @@ function generateJoke() {
     .then((res) => {
       document.getElementById('joke').textContent = res.data.joke
     })
-    .catch(err => console.error(err))
+    .catch((err) => console.error(err))
 }
 
 export { generateJoke }
