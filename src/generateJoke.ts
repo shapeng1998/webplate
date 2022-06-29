@@ -6,7 +6,8 @@ function generateJoke() {
       headers: { Accept: 'application/json' },
     })
     .then((res) => {
-      document.getElementById('joke').textContent = res.data.joke
+      ;(document.getElementById('joke') as HTMLElement).textContent =
+        res.data.joke
     })
     .catch((err) => console.error(err))
 }
